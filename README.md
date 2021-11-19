@@ -2,7 +2,7 @@
 
 ## About
 
-My solution to the Codex's Pre-Qualification Test that will be written in Kotlin.
+My solution to the Codex's Pre-Qualification Test that will be written in Kotlin and in Python3.
 
 
 ## Usage
