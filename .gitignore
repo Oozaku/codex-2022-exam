@@ -1,6 +1,9 @@
 # Build file
 *.jar
 
+# Markdown preview
+README.html
+
 target/
 pom.xml.tag
 pom.xml.releaseBackup
