@@ -19,7 +19,7 @@ export FLASK_APP=my_server
 
 # Usage
 
-Export the variable as described in [[#Setup]] section first, then you run the command bellow: 
+Export the variable as described in [Setup](#setup) section first, then you run the command bellow: 
 
 ~~~sh
 flask run
