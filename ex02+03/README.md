@@ -1,7 +1,7 @@
 # Description
 
-This is the implementation of exercises 02 and 03, and given two rectangules that are lined with
-the cartesian axes and each of them are described with two points located in oposite extremities
+This is the implementation of exercises 02 and 03. With two rectangles that are lined with
+the cartesian axes and each of them are described by two points located in oposite sides 
 of the rectangule's diagonal, find if the rectangules intersects with each other (exercise 02) and
 find the intersected area between those two rectangules (exercise 03).
 
@@ -14,8 +14,8 @@ how to install Kotlin, look at this link https://kotlinlang.org/docs/command-lin
 
 # Setup
 
-You need to compile it before using. You can run the command bellow that will generate the file
-`rectangle.jar` that will be executed in JVM.
+You need to compile it first. You can run the command bellow that will generate the file
+`rectangle.jar`.
 
 ~~~sh 
 kotlinc rectangle.kt -include-runtime -d rectangle.jar
@@ -24,12 +24,12 @@ kotlinc rectangle.kt -include-runtime -d rectangle.jar
 
 # Usage
 
-To run the code, you must inform with the parameters if you want to know if the two rectangles
+To run the code, you must inform with the first parameter if you want to know if the two rectangles
 intersects each other or if you want to know the value of intersected area between those two rectangles,
 the first you add `boolean` in place of `option`, but if you want to know the area, replace `option`
 with `area`.
 
-The fields `n...` are the coordinates of the points that will describe the rectangles. The first rectangle
+The following arguments `n...` are the coordinates of the points that will describe the rectangles. The first rectangle
 is defined by points (x, y) = (n1, n2) and (n3, n4), the second rectangle is define by the points (n5, n6)
 and (n7, n8).
 
