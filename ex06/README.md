@@ -47,3 +47,13 @@ access the API. E.g.: `flask run --port 3000` will run the API and it will be ac
 port 3000.
 
 More details in https://flask.palletsprojects.com/en/2.0.x/server/#address-already-in-use.
+
+# Printscreens
+
+The images bellow shows the API working by the side of the API via logs and it works on the client's
+side with the browser making a GET-request in the endpoint `/time`.
+
+![log](assets/log.png)
+
+![browser](assets/browser.png)
+

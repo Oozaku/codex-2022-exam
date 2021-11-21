@@ -61,3 +61,13 @@ java -jar rectangle.jar area 3 5 11 11 7 2 13 7
 Avoid duplicated code between those two exercises, since the problem of those two exercises
 are almost equal in my solution and with this merge is easier to find and fix errors.
 
+# Printscreens
+
+The image bellow shows that the program works correctly for the exercise 02.
+
+![ex02](assets/ex02.png)
+
+The next image shows the program working correctly for the problem asked in exercise 03.
+
+![ex03](assets/ex03.png)
+

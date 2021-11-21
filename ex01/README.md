@@ -33,3 +33,11 @@ java -jar cnpj 00.000.000/0000-0000
 java -jar cnpj 00000000000000
 ~~~
 
+# Printscreen
+
+The printscreen bellow shows the program working, this shows that the program works fine with both
+possible formats of CNPJ and it works correctly for the two different cnpjs, firts is correct and 
+the last is wrong (invalid).
+
+![cnpj](assets/cnpj.png)
+

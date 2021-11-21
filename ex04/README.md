@@ -36,3 +36,31 @@ if the program stops responding.
 This program was not fully tested as it is a part of the exam's exercise and major bugs
 may happen, as I did not tested in Windows environment as an example.
 
+# Video
+
+You can see my program working in this link.
+
+https://drive.google.com/file/d/1KNUiu6L_pRq38s-oqQM7LKOG73YOR5xE/view?usp=sharing
+
+0:00 - run the program with no data saved
+
+0:10 - add random notes
+
+0:52 - print cheatlist of commands
+
+0:58 - show all notes
+
+1:00 - mark a note as done
+
+1:12 - show all notes
+
+1:20 - show only not done notes
+
+1:35 - quit
+
+1:37 - run the program with saved data
+
+1:40 - show that data was saved and loaded successfully
+
+1:50 - delete note
+
