@@ -8,10 +8,10 @@ following entities: Clients; Products; Orders.
 
 ## Client
 
-For the client, we need his identity information that will be mainly CPF and his full name.
-Other field is *UserId*, created when the account is created in database and it is the primary key
-that will be used throughout the platform. The *AddressId* is the foreign key to the client's 
-address.
+For the *Client*, we will be using some personal data to identify the person, we are considering that
+this problem is in Brazil, so CPF is a good document to identify the person. Beyond that and the other
+common informations as email and fone numbers, we are using *UserId*, this is the primary key and it is 
+created when the account is created in the database.
 
 | <u>UserId</u> | CPF            | Full Name | Fone Number        | Email           |
 |---------------|----------------|-----------|--------------------|-----------------|
@@ -38,7 +38,7 @@ find the corresponding client with the key *UserId*.
 ## Order
 
 Each order has an unique *OrderId* created when a order is created and it is the primary key.
-Other field that is important to mention is that *Order* has the field *UserId* that points to
+Other field that is important to mention is *UserId* that points to
 only one client, that is one order has only one client, but one client may have more than one 
 order.
 
@@ -53,10 +53,10 @@ order.
 
 As one order may have more than one product, the solution is to make a new table and to see 
 what products were bought in an order, we filter for all entries that have OrderId equal to
-what we are looking for, like the order 789 has three products in the cart.
+the orders's id that we are looking for, like the order 789 has three products.
 
 Other field that is important is price, since we need to know the price tag in the exact
-moment that the client have finished the buy and not the most current price tag for that 
+moment that the client have finished buying and not the most current price tag for that 
 product.
 
 | OrderId | Barcode  | Price |
@@ -70,7 +70,11 @@ product.
 ## Product
 
 Each product has an unique bar code and it is the primary key. Also it holds the product's
-name and the current price of the product.
+name and the current price of the product. 
+
+The price tags are different from the carts' on purpose, because I want to illustrate that
+the price of the products may have changed in the time between the time that the client bought
+the product and now. So we need the field price in cart for this reason.
 
 | <u>Barcode</u> | Name      | Price |
 |----------------|-----------|-------|

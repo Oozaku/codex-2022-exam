@@ -1,10 +1,10 @@
 # Description
 
-Get time in API 'http://worldclockapi.com/api/json/utc/now' and printing the time in timezone UTC and the time in my timezone, UTC-3.
+Get time in API 'http://worldclockapi.com/api/json/utc/now' and print the time in UTC and the time in my local timezone, UTC-3.
 
 # Requirements
 
-To run this script, you need `Python3` and its library `requests`.
+To run this script, you need `Python3` and the library `requests`.
 
 # Usage
 

@@ -1,7 +1,7 @@
 # Description
 
-Get time in API 'http://worldclockapi.com/api/json/utc/now' and printing the time in timezone UTC 
-and the time in my timezone, UTC-3.
+Create a REST-server to provide the local time. To do this, I did an API using Python3 and 
+the framework Flask.
 
 # Requirements
 

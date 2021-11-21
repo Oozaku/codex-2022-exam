@@ -10,8 +10,8 @@ how to install Kotlin, look at this link https://kotlinlang.org/docs/command-lin
 
 # Setup
 
-You need to compile it before using. You can run the command bellow that will generate the file
-`rectangle.jar` that will be executed in JVM.
+You need to compile it. You can run the command bellow that will generate the file
+`rectangle.jar`.
 
 ~~~sh 
 kotlinc ex01.kt -include-runtime -d cnpj.jar
@@ -20,9 +20,9 @@ kotlinc ex01.kt -include-runtime -d cnpj.jar
 
 # Usage
 
-To check if a CNPJ is valid, run the program with the command bellow and replacing 00000000000000
+To check if a CNPJ is valid, run the program with the command bellow and replace 00000000000000
 with the CNPJ that you want to check. The CNPJ can be given with the two formats as shown bellow,
-you can give it with only numbers or add the dots and slash to make it more human readable.
+you can give it with only the numbers or add the dots and slashes to make it more readable.
 
 
 ~~~sh
@@ -36,8 +36,8 @@ java -jar cnpj 00000000000000
 # Printscreen
 
 The printscreen bellow shows the program working, this shows that the program works fine with both
-possible formats of CNPJ and it works correctly for the two different cnpjs, firts is correct and 
-the last is wrong (invalid).
+possible formats of CNPJ and it works correctly for the two different CNPJs, first is valid and 
+the last is invalid.
 
 ![cnpj](assets/cnpj.png)
 
