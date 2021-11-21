@@ -22,6 +22,8 @@ def convertToSpTimezone(dateUTC, timeUTC):
     year = 0
     month = 1
     day = 2
+    # holding the numbers of days of each month
+    # February have one more day in leap years
     daysInMonth = [
         31,                                     # Jan
         29 if dateUTC[year] % 4 == 0 else 28,   # Feb
@@ -36,6 +38,9 @@ def convertToSpTimezone(dateUTC, timeUTC):
         30,                                     # Nov
         31                                      # Dec
     ]
+    # Convert to UTC-3, i.e. subtract the hours by 3
+    # and fix the hour, month and year to make sense
+    # e.g. -1h is not reasonable, neither month 0
     utcSpDiff = -3
     dateSP = dateUTC[:]
     timeSP = timeUTC[:]
@@ -52,17 +57,14 @@ def convertToSpTimezone(dateUTC, timeUTC):
     return dateSP, timeSP
 
 def dateTimeToString(date, time, timezone='TEST'):
+    # Make the original format of date and time from the API
+    # e.g.: 2000-01-01T00:00Z
     date = list(map(lambda x: f"{x:02d}", date))
     time = list(map(lambda x: f"{x:02d}", time))
     return f"{timezone}: {'-'.join(date)}T{':'.join(time)}Z"
 
 
 if __name__ == '__main__':
-    # dateSP, timeSP = convertToSpTimezone([2000, 1, 1], [0, 0])
-    # print(dateTimeToString(dateSP, timeSP))
-    # dateSP, timeSP = convertToSpTimezone([2001, 3, 1], [2, 59])
-    # print(dateTimeToString(dateSP, timeSP))
-
     dateUTC, timeUTC = getDateTime('http://worldclockapi.com/api/json/utc/now', 'currentDateTime')
     dateSP, timeSP = convertToSpTimezone(dateUTC, timeUTC)
     print(dateTimeToString(dateUTC, timeUTC, timezone='UTC'))
